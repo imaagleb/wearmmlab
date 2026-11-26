@@ -22,11 +22,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 44px 24px;
+  padding: 28px 32px;
   background: var(--bg);
   color: var(--ink);
   font-family: var(--mono);
-  font-size: 11px;
+  font-size: 14px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
@@ -40,13 +40,13 @@ a {
 
 .sheet {
   width: 100%;
-  max-width: 800px;
+  max-width: 1120px;
   border: 1px solid var(--ink);
   background: var(--paper);
-  padding: 14px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 18px;
 }
 
 /* ---- header ---- */
@@ -55,39 +55,19 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
+  gap: 18px;
 }
 
 .logo {
   display: inline-block;
-  padding: 5px 8px 6px;
+  padding: 7px 12px 8px;
   background: var(--ink);
   color: var(--paper);
-  font-size: 11px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0.1em;
   text-decoration: none;
   white-space: nowrap;
-}
-
-.head-badge {
-  display: flex;
-  align-items: stretch;
-  font-size: 8px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.badge-black {
-  background: var(--ink);
-  color: var(--paper);
-  padding: 4px 8px;
-}
-
-.badge-outline {
-  border: 1px solid var(--ink);
-  border-left: 0;
-  padding: 3px 8px;
 }
 
 /* ---- grid ---- */
@@ -95,7 +75,7 @@ a {
 .grid {
   display: grid;
   grid-template-columns: 1.04fr 1fr;
-  gap: 10px;
+  gap: 16px;
   align-items: start;
 }
 
@@ -132,8 +112,8 @@ a {
 }
 
 .figcaption {
-  margin-top: 7px;
-  font-size: 8px;
+  margin-top: 10px;
+  font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--muted);
   text-transform: uppercase;
@@ -145,11 +125,11 @@ a {
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 12px;
 }
 
 .eyebrow {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
@@ -164,10 +144,10 @@ a {
 .card {
   position: relative;
   display: grid;
-  grid-template-columns: 26px minmax(0, 1fr) auto;
+  grid-template-columns: 32px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 2px;
-  padding: 7px 8px;
+  gap: 4px;
+  padding: 11px 14px;
   border: 1px solid var(--ink);
   border-bottom: 0;
   background: transparent;
@@ -188,7 +168,7 @@ a {
 }
 
 .card-mark {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: -0.06em;
   color: var(--faint);
   user-select: none;
@@ -200,7 +180,7 @@ a {
 
 .card-title {
   display: block;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -210,7 +190,7 @@ a {
 
 .card-sub {
   display: block;
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.03em;
   color: var(--muted);
   white-space: nowrap;
@@ -219,9 +199,9 @@ a {
 }
 
 .card-year {
-  font-size: 8px;
+  font-size: 10px;
   letter-spacing: 0.08em;
-  padding-left: 8px;
+  padding-left: 12px;
 }
 
 .card:not(.is-active):hover {
@@ -256,10 +236,10 @@ a {
   min-width: 0;
   border: 0;
   background: transparent;
-  padding: 9px 8px;
+  padding: 13px 14px;
   color: var(--ink);
   font: inherit;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.02em;
   outline: none;
 }
@@ -273,9 +253,9 @@ a {
   border-left: 1px solid var(--ink);
   background: var(--ink);
   color: var(--paper);
-  padding: 0 14px;
+  padding: 0 20px;
   font: inherit;
-  font-size: 8px;
+  font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.12em;
   cursor: pointer;
@@ -291,8 +271,8 @@ a {
 }
 
 .note {
-  margin-top: -4px;
-  font-size: 8px;
+  margin-top: 0;
+  font-size: 10px;
   letter-spacing: 0.03em;
   color: var(--muted);
 }
@@ -303,44 +283,13 @@ a {
   margin-top: 1px;
   background: var(--ink);
   color: var(--paper);
-  padding: 13px 14px 12px;
+  padding: 18px 20px 16px;
   display: flex;
   flex-direction: column;
-  gap: 7px;
-}
-
-.blackbox h2 {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.blackbox p {
-  font-size: 9px;
-  line-height: 1.55;
-  letter-spacing: 0.02em;
-  color: #d6d6d0;
-}
-
-.blackbox .bb-meta {
-  margin-top: 2px;
-  font-size: 7.5px;
-  letter-spacing: 0.12em;
-  color: #8f8f89;
-  text-transform: uppercase;
-}
-
-/* ---- footer ---- */
-
-.foot {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 14px;
   border-top: 1px solid var(--ink);
-  padding-top: 9px;
-  font-size: 7.5px;
+  padding-top: 14px;
+  font-size: 9px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -363,9 +312,9 @@ a {
 
 /* ---- responsive ---- */
 
-@media (max-width: 720px) {
+@media (max-width: 960px) {
   body {
-    padding: 14px;
+    padding: 20px;
   }
 
   .grid {
@@ -375,7 +324,7 @@ a {
   .foot {
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px;
+    gap: 8px;
   }
 
   .card-title {
